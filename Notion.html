@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> پروفایل شخص</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      background-color: #f3f4f6;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+  <div class="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-2xl border-t-8 border-indigo-500">
+    <h1 class="text-3xl font-bold text-center text-indigo-800 mb-6"> پروفایل شخص</h1>
+    <p class="text-center text-gray-600 mb-8">لطفا اطلاعات خود را برای ساخت وارد کنید.</p>
+
+    <div class="space-y-4">
+      <div>
+        <label for="firstName" class="block text-sm font-medium text-gray-700">نام:</label>
+        <input type="text" id="firstName" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="مثال: معین">
+      </div>
+      <div>
+        <label for="lastName" class="block text-sm font-medium text-gray-700">نام خانوادگی:</label>
+        <input type="text" id="lastName" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="مثال: ثابت ایمانی">
+      </div>
+      <div>
+        <label for="birthYear" class="block text-sm font-medium text-gray-700">سال تولد:</label>
+        <input type="number" id="birthYear" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="مثال: 2003">
+      </div>
+      <div>
+        <label for="job" class="block text-sm font-medium text-gray-700">شغل:</label>
+        <input type="text" id="job" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="مثال: برنامه‌نویس">
+      </div>
+      <div>
+        <label for="friends" class="block text-sm font-medium text-gray-700">دوستان (با کاما جدا کنید):</label>
+        <input type="text" id="friends" class="mt-1 block w-full px-3 py-2 bg-gray-50 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" placeholder="مثال: علیرضا، امیررضا، رضا">
+      </div>
+      <div class="flex items-center justify-start py-2">
+        <input id="hasDriversLicense" type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500">
+        <label for="hasDriversLicense" class="mr-2 block text-sm text-gray-900">گواهینامه رانندگی دارم.</label>
+      </div>
+
+      <div class="pt-4">
+        <button id="generateBtn" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-bold text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300 transform hover:scale-105">
+          ایجاد پروفایل
+        </button>
+      </div>
+    </div>
+    <div id="output" class="mt-8 pt-4 border-t border-gray-200 text-gray-800 text-base leading-relaxed">
+    </div>
+  </div>
+  </body>
+</html>
